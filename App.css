@@ -1,0 +1,134 @@
+.headerBox {
+  /* background-color: black; */
+    margin-top:10px ;
+    padding:20px;   
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    /* border-radius: 20px; */
+}body{
+   background-image:  url('./sun-sky.jpg');
+    background-size: cover;
+    background-position: top right ;
+    background-repeat: no-repeat;
+}
+
+.main-container{
+    display: flex;
+    align-items: flex-start;
+   
+}
+
+.weather-part{
+    color: black;
+    width: 300px;
+
+    /* pic */
+    background-image:  url('./sun-sky.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    
+    text-align: center;
+     border-radius: 20px;
+     border: 1px;
+     padding:20px;
+     margin: 20px;
+    }
+
+.News-part{
+     padding:20px;
+     flex: 1;
+     
+     }
+
+nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    
+    
+     flex-wrap: wrap;
+     gap: 10px;
+   border: 1px solid #ddd;
+}
+
+button{
+  
+   padding: 6px;
+   border: 1px solid #080808;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+input{
+   padding: 10px;
+   border: 1px;
+   /* border: 1px solid #ddd; */
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(13, 19, 13);
+    border-color: rgb(0, 0, 0);
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 5px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.news-card {
+  border: 1px solid #ddd;
+  color:black;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+.news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;   
+  margin-bottom: 10px;
+}
+
+.news-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.news-card a {
+  color: #ffefef;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MOBILE DISPLAY -  */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+  .weather-part {
+    width: 85%;
+    margin: 10px auto;
+  }
+  .News-part {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .headerBox{
+    font-size: 10px;
+  }
+  
+}
